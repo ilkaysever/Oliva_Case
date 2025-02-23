@@ -3,7 +3,7 @@
     <entity name="Favorite" representedClassName="Favorite" syncable="YES" codeGenerationType="class">
         <attribute name="displayName" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
         <attribute name="price" optional="YES" attributeType="String"/>
         <attribute name="productID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>

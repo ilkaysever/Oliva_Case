@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailController" customModule="Oliva_Case" customModuleProvider="target">
+            <connections>
+                <outlet property="brandLabel" destination="tqt-D0-0Rg" id="pb8-7j-170"/>
+                <outlet property="descLabel" destination="VDI-ND-foE" id="Ifs-AK-SV6"/>
+                <outlet property="imgView" destination="EEH-R8-Hsc" id="Zj9-Qf-bp5"/>
+                <outlet property="likeButton" destination="CBb-cW-4EZ" id="0Jj-TJ-Nwa"/>
+                <outlet property="priceLabel" destination="9YR-RJ-PF4" id="v47-vJ-HAe"/>
+                <outlet property="titleLabel" destination="ZpV-vb-Tpd" id="oUc-6z-24X"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMn-31-Nlf">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sU-Qz-SMR">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="830.33333333333337"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EEH-R8-Hsc">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="450"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="450" id="tqc-R7-MCC"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OiU-QM-5fI">
+                                    <rect key="frame" x="16" y="458" width="361" height="77"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polo Tshirt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqt-D0-0Rg">
+                                            <rect key="frame" x="137" y="0.0" width="87" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Polo Yaka Gömlek" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpV-vb-Tpd">
+                                            <rect key="frame" x="112.66666666666666" y="28.333333333333371" width="136" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.450 ₺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YR-RJ-PF4">
+                                            <rect key="frame" x="151" y="56.666666666666636" width="59.333333333333343" height="20.333333333333336"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SBZ-w8-4Bu">
+                                    <rect key="frame" x="16" y="567" width="361" height="231.33333333333337"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ürün Özellikleri" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxk-79-nEG">
+                                            <rect key="frame" x="0.0" y="0.0" width="115.33333333333333" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDI-ND-foE">
+                                            <rect key="frame" x="0.0" y="28.333333333333371" width="361" height="203"/>
+                                            <mutableString key="text">Yaygın inancın tersine, Lorem Ipsum rastgele sözcüklerden oluşmaz. Kökleri M.Ö. 45 tarihinden bu yana klasik Latin edebiyatına kadar uzanan 2000 yıllık bir geçmişi vardır. Virginia'daki Hampden-Sydney College'dan Latince profesörü Richard McClintock, bir Lorem Ipsum pasajında geçen ve anlaşılması en güç sözcüklerden biri olan 'consectetur' sözcüğünün klasik edebiyattaki örneklerini incelediğinde kesin bir kaynağa ulaşmıştır. Lorm </mutableString>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBb-cW-4EZ">
+                                    <rect key="frame" x="349" y="0.0" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="CBb-cW-4EZ" secondAttribute="height" multiplier="1:1" id="Xdq-25-UG9"/>
+                                        <constraint firstAttribute="width" constant="44" id="lom-g6-sQd"/>
+                                    </constraints>
+                                    <color key="tintColor" systemColor="systemPinkColor"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="heart.fill" catalog="system"/>
+                                    <connections>
+                                        <action selector="likeButtonTapped:" destination="-1" eventType="touchUpInside" id="0TK-h1-XuG"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="EEH-R8-Hsc" secondAttribute="trailing" id="3kI-qe-kkN"/>
+                                <constraint firstItem="CBb-cW-4EZ" firstAttribute="trailing" secondItem="EEH-R8-Hsc" secondAttribute="trailing" id="7KG-7F-J9t"/>
+                                <constraint firstAttribute="trailing" secondItem="SBZ-w8-4Bu" secondAttribute="trailing" constant="16" id="Gpi-oA-HRg"/>
+                                <constraint firstItem="EEH-R8-Hsc" firstAttribute="top" secondItem="4sU-Qz-SMR" secondAttribute="top" id="J67-Bk-IBf"/>
+                                <constraint firstItem="SBZ-w8-4Bu" firstAttribute="leading" secondItem="4sU-Qz-SMR" secondAttribute="leading" constant="16" id="LqW-M6-1pU"/>
+                                <constraint firstItem="OiU-QM-5fI" firstAttribute="leading" secondItem="4sU-Qz-SMR" secondAttribute="leading" constant="16" id="MT2-6z-Z1W"/>
+                                <constraint firstItem="OiU-QM-5fI" firstAttribute="top" secondItem="EEH-R8-Hsc" secondAttribute="bottom" constant="8" id="POt-ot-fWU"/>
+                                <constraint firstItem="CBb-cW-4EZ" firstAttribute="top" secondItem="EEH-R8-Hsc" secondAttribute="top" id="W07-zx-CSP"/>
+                                <constraint firstAttribute="bottom" secondItem="SBZ-w8-4Bu" secondAttribute="bottom" constant="32" id="dmb-wA-9cx"/>
+                                <constraint firstItem="SBZ-w8-4Bu" firstAttribute="top" secondItem="OiU-QM-5fI" secondAttribute="bottom" constant="32" id="eCB-P3-sB8"/>
+                                <constraint firstAttribute="trailing" secondItem="OiU-QM-5fI" secondAttribute="trailing" constant="16" id="he3-4l-R9n"/>
+                                <constraint firstItem="EEH-R8-Hsc" firstAttribute="leading" secondItem="4sU-Qz-SMR" secondAttribute="leading" id="x1Z-Br-wdZ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="4sU-Qz-SMR" secondAttribute="trailing" id="2vW-3T-uKr"/>
+                        <constraint firstItem="4sU-Qz-SMR" firstAttribute="top" secondItem="qMn-31-Nlf" secondAttribute="top" id="GF9-73-ZcG"/>
+                        <constraint firstItem="4sU-Qz-SMR" firstAttribute="leading" secondItem="qMn-31-Nlf" secondAttribute="leading" id="cJ9-iM-CV8"/>
+                        <constraint firstAttribute="bottom" secondItem="4sU-Qz-SMR" secondAttribute="bottom" id="e7U-Ud-eTq"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qMn-31-Nlf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2Kt-zz-3n5"/>
+                <constraint firstItem="4sU-Qz-SMR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="BQt-b7-uZp"/>
+                <constraint firstItem="qMn-31-Nlf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="U1W-bX-eGC"/>
+                <constraint firstItem="qMn-31-Nlf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZkG-Az-5At"/>
+                <constraint firstItem="qMn-31-Nlf" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="lOO-PS-3v7"/>
+            </constraints>
+            <point key="canvasLocation" x="75.572519083969468" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

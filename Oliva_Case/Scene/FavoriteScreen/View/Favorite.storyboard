@@ -34,14 +34,40 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favori listenizde henüz hiç ürün bulunmuyor." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qx6-lK-iu9">
+                                <rect key="frame" x="16" y="406.66666666666669" width="361" height="58.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fvr-Gu-Pk3">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qx6-lK-iu9" secondAttribute="trailing" constant="16" id="BBI-sK-u7d"/>
+                            <constraint firstItem="qx6-lK-iu9" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="KMa-BE-CGY"/>
+                            <constraint firstAttribute="bottom" secondItem="fvr-Gu-Pk3" secondAttribute="bottom" id="PeS-eh-qn7"/>
+                            <constraint firstItem="qx6-lK-iu9" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="VsM-g6-XO8"/>
+                            <constraint firstItem="fvr-Gu-Pk3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Y98-KL-qnf"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fvr-Gu-Pk3" secondAttribute="trailing" id="bt1-NX-bnn"/>
+                            <constraint firstItem="qx6-lK-iu9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="dME-na-6kA"/>
+                            <constraint firstItem="fvr-Gu-Pk3" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="pDi-rJ-VeT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eJ2-FX-xkM"/>
+                    <connections>
+                        <outlet property="noFavoriteLabel" destination="qx6-lK-iu9" id="iEx-oS-jMM"/>
+                        <outlet property="tableView" destination="fvr-Gu-Pk3" id="AMf-5L-0or"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-637" y="-6"/>
+            <point key="canvasLocation" x="-599" y="-6"/>
         </scene>
     </scenes>
     <resources>
